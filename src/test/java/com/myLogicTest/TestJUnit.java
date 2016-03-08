@@ -92,12 +92,12 @@ public class TestJUnit {
 
         @Parameterized.Parameters(name = "{index}: Действие {0} {2} {1} = {3}")
         public static Collection<Object[]> getTestData() {
-            return Arrays.asList(//data
-                     new Object[][]{
+            return Arrays.asList(data
+                    /* new Object[][]{
                     {2, 2, "*", 4},
                     {2, 0, "+" , 2},
                     {2, 2,"/", 1},
                     {0, 2,"-",-2}
-            });
+            }*/);
         }
 }
