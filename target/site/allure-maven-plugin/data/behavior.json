@@ -1,0 +1,70 @@
+{
+  "features" : [ {
+    "title" : "Without feature",
+    "statistic" : {
+      "total" : 4,
+      "passed" : 4,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "f6e048ea608b8f41",
+      "title" : "Without story",
+      "statistic" : {
+        "total" : 4,
+        "passed" : 4,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "eb8fa904407a842",
+        "name" : "checkCalculator[0: Действие 2 * 2 = 4]",
+        "title" : "Check calculator [0: Действие 2 * 2 = 4]",
+        "time" : {
+          "start" : 1457454521564,
+          "stop" : 1457454521573,
+          "duration" : 9
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "7915fca60d5a0550",
+        "name" : "checkCalculator[1: Действие 2 + 0 = 2]",
+        "title" : "Check calculator [1: Действие 2 + 0 = 2]",
+        "time" : {
+          "start" : 1457454521875,
+          "stop" : 1457454521875,
+          "duration" : 0
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "cc337a34e8f0ff42",
+        "name" : "checkCalculator[2: Действие 2 / 2 = 1]",
+        "title" : "Check calculator [2: Действие 2 / 2 = 1]",
+        "time" : {
+          "start" : 1457454521880,
+          "stop" : 1457454521882,
+          "duration" : 2
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "1021c0c0561d3383",
+        "name" : "checkCalculator[3: Действие 0 - 2 = -2]",
+        "title" : "Check calculator [3: Действие 0 - 2 = -2]",
+        "time" : {
+          "start" : 1457454521888,
+          "stop" : 1457454521888,
+          "duration" : 0
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  } ]
+}
