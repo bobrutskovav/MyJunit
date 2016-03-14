@@ -10,8 +10,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 
 
 /**
@@ -25,7 +25,7 @@ public class TestJUnit {
     public String operation;
     public int expectedResult;
 
-    public static Object[][] data;
+
 
 
 
@@ -76,14 +76,8 @@ public class TestJUnit {
 
 
         @Parameterized.Parameters(name = "{index}: Действие {0} {2} {1} = {3}")
-        public static Collection<Object[]> getTestData() {
-
-            try {
-                makeData();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return Arrays.asList(data);
+        public static Collection testData() throws IOException {
+            return getTestData("C:\\Users\\third\\IdeaProjects\\MyJunit\\src\\test\\java\\com\\myLogicTest\\datafile.csv");
         }
 
     /* new Object[][]{
@@ -93,21 +87,18 @@ public class TestJUnit {
                     {0, 2,"-",-2}
             }*/
 
-    public static void makeData() throws IOException {
-
-        BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\third\\IdeaProjects\\MyJunit\\src\\test\\java\\com\\myLogicTest\\datafile.csv"));
-
-        ArrayList<Object[]> tempArray = new ArrayList<>();
-        String newLine;
-        Object[] oneString;
-        while ((newLine = reader.readLine()) != null) {
-
-
-            oneString = newLine.split(";");
-            tempArray.add(oneString);
+    public static Collection<String[]> getTestData(String fileName)
+            throws IOException {
+        List<String[]> records = new ArrayList<>();
+        String record;
+        BufferedReader file = new BufferedReader(new FileReader(fileName));
+        while ((record = file.readLine()) != null) {
+            String fields[] = record.split(",");
+            records.add(fields);
         }
-        data = new Object[tempArray.size()][];
-        for (int i = 0; i < data.length; i++) {
-            Object[] row = tempArray.get(i); data[i] = row; }
+        //TODO For each record in records convert char to int?
+        file.close();
+        return records;
     }
+
 }
