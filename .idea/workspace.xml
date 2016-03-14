@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9aa56ec-92a5-450c-a31b-0c632a1e111b" name="Default" comment="Refactoring, but still dotn works">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/myLogicTest/TestJUnit.class" afterPath="$PROJECT_DIR$/target/test-classes/com/myLogicTest/TestJUnit.class" />
+    <list default="true" id="e9aa56ec-92a5-450c-a31b-0c632a1e111b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/myLogicTest/TestJUnit.java" afterPath="$PROJECT_DIR$/src/test/java/com/myLogicTest/TestJUnit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/myLogicTest/datafile.csv" afterPath="$PROJECT_DIR$/src/test/java/com/myLogicTest/datafile.csv" />
     </list>
     <ignored path="MyJunit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,14 +27,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestJUnit.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestJUnit.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/myLogicTest/TestJUnit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3326226">
+            <state vertical-scroll-proportion="0.0">
               <caret line="91" column="47" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.07249467">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,6 +84,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/myLogic/Calculator.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/myLogicTest/datafile.csv" />
         <option value="$PROJECT_DIR$/src/test/java/com/myLogicTest/TestJUnit.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -689,7 +698,7 @@
       <workItem from="1457635815241" duration="2952000" />
       <workItem from="1457721734171" duration="2892000" />
       <workItem from="1457949345817" duration="1222000" />
-      <workItem from="1457982302135" duration="3788000" />
+      <workItem from="1457982302135" duration="3968000" />
     </task>
     <task id="LOCAL-00001" summary="Still dont works...">
       <created>1457638161049</created>
@@ -709,7 +718,13 @@
       <option name="project" value="LOCAL" />
       <updated>1457953495915</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactoring, but still dotn works">
+      <created>1457987230758</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1457987230759</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -745,7 +760,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43889000" />
+    <option name="totallyTimeSpent" value="44069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1100,11 +1115,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/myLogicTest/TestJUnit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3326226">
+        <state vertical-scroll-proportion="0.0">
           <caret line="91" column="47" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07249467">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
