@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -25,19 +26,17 @@ public class TestJUnit {
     public String operation;
     public int expectedResult;
 
+    public static File file = new File("src\\test\\java\\com\\myLogicTest\\datafile.csv");
 
 
-
-
-    public TestJUnit(int firstParameter, int secondParameter, String operation, int expectedResult) {
-        this.firstParameter = firstParameter;
-        this.secondParameter = secondParameter;
-        this.expectedResult = expectedResult;
+    public TestJUnit(String firstParameter, String secondParameter, String operation, String expectedResult) {
+        this.firstParameter = Integer.parseInt(firstParameter);
+        this.secondParameter = Integer.parseInt(secondParameter);
+        this.expectedResult = Integer.parseInt(expectedResult);
         this.operation = operation;
 
     }
 
-       // @BeforeClass
 
 
 
@@ -77,7 +76,7 @@ public class TestJUnit {
 
         @Parameterized.Parameters(name = "{index}: Действие {0} {2} {1} = {3}")
         public static Collection testData() throws IOException {
-            return getTestData("C:\\Users\\third\\IdeaProjects\\MyJunit\\src\\test\\java\\com\\myLogicTest\\datafile.csv");
+            return getTestData(file.getAbsolutePath());
         }
 
     /* new Object[][]{
@@ -96,7 +95,7 @@ public class TestJUnit {
             String fields[] = record.split(",");
             records.add(fields);
         }
-        //TODO For each record in records convert char to int?
+
         file.close();
         return records;
     }
